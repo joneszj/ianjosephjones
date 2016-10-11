@@ -328,7 +328,6 @@ footer a:target {
     left: 50%;
     width: 100%;
     transform: translateX(-50%) translateY(-50%);
-    margin-top: 7%;
 }
 
 .container h1 {
