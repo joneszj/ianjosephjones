@@ -1,10 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="" style="opacity:0;">
+<html class="no-js" lang="" style="opacity:0;" ng-app="ijj">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
+    <base href="/">
+    <title>ian joseph jones</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/normalize.css">
@@ -13,7 +14,7 @@
     <script src="/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
-<body>
+<body ng-controller="mainController">
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -21,31 +22,18 @@
         <div id="menu" class="menu">
             <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
             <ul class="menu-items">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#home">About</a></li>
-                <li><a href="#home">Portfolio</a></li>
-                <li><a href="#home">Experience</a></li>
-                <li><a href="#home">Appraise</a></li>
-                <li><a href="#home">Blog</a></li>
-                <li><a href="#home">Inquire</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="portfolio">Portfolio</a></li>
+                <li><a href="experience">Experience</a></li>
+                <li><a href="appraise">Appraise</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="inquire">Inquire</a></li>
             </ul>
         </div>
     </nav>
     <!-- Add your site or application content here -->
-    <div class="fullscreen-bg ">
-        <video loop muted autoplay poster="img/redbaloons.jpg" class="fullscreen-bg__video">
-                <source src="vid/big_buck_bunny.webm" type="video/webm">
-                <source src="vid/big_buck_bunny.mp4" type="video/mp4">
-                <source src="vid/big_buck_bunny.ogv" type="video/ogg">
-                    <source src="http://dev2.slicejack.com/fullscreen-video-demo/video/big_buck_bunny.mp4" type="video/mp4">
-                    <source src="http://dev2.slicejack.com/fullscreen-video-demo/video/big_buck_bunny.ogv" type="video/ogg">
-                    <source src="http://dev2.slicejack.com/fullscreen-video-demo/video/big_buck_bunny.webm" type="video/webm">
-            </video>
-    </div>
-    <div class="container centered">
-        <h1>Passion. Commitment. Forever.</h1>
-        <p>leorm ipsum tenebras lux emoi gar too sin christos kai tu apathanein kerdos leorm ipsdj jahs jlfdsdsfn fdjs the roof upon the road int he forest</p>
-        <a class="ghost-button margin-two" href="#">Inquire</a>
+    <div ng-view>
     </div>
     <footer>
         <strong>|</strong> <a href="#" target="_blank">pintrest</a> 
@@ -54,8 +42,9 @@
         <strong>|</strong> <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.ianjosephjones.com%2Fcontact%2F" target="_blank">twitter</a> <strong>|</strong> 
     </footer>
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="/js/main.js"></script>
     <script src="/js/vendor/angular.min.js"></script>
+    <script src="/js/vendor/angular-route.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

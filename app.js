@@ -23,6 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use("/css",express.static(__dirname + "/public/stylesheets"));
 app.use("/js",express.static(__dirname + "/public/javascripts"));
 app.use("/img",express.static(__dirname + "/public/images"));
+app.use("/view",express.static(__dirname + "/views"));
 app.use("/vid",express.static(__dirname + "/public/video"));
 
 app.use('/', routes);
