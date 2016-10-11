@@ -53,7 +53,7 @@
 
 @media (max-width: 816px) {
     .fullscreen-bg {
-        background: url('/img/redbaloons.jpg') center center / cover no-repeat;
+        background: url('/img/redbaloonsBW.jpg') center center / cover no-repeat;
     }
     .fullscreen-bg__video {
         display: none;
@@ -328,6 +328,7 @@ footer a:target {
     left: 50%;
     width: 100%;
     transform: translateX(-50%) translateY(-50%);
+    margin-top: 7%;
 }
 
 .container h1 {
@@ -342,4 +343,20 @@ footer a:target {
 
 .centered {
     text-align: center;
+}
+
+
+@media only screen and (max-width: 816px) {
+    .container {
+        font-size: 1.3em;
+    }
+}
+
+.slickDiv {
+    margin: 3%;
+}
+
+.thumbnail {
+    height: 300px;
+    width: 100%;
 }

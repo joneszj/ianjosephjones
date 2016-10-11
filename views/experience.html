@@ -1,7 +1,81 @@
 <div class="fullscreen-bg">
     <img class="fullscreen-bg__image" src="/img/ianjones02.jpg">
 </div>
-    <div class="container centered">
-        <h1>Experience</h1>
-        <p>experience page</p>
+<div class="container centered">
+    <h1>Experience</h1>
+    <p>experience page</p>
+    <div class="slickDiv">
+        <div>
+            <a class="thumbnail-link" href="/img/wedding01.jpg">
+                <img class="thumbnail" data-lazy="/img/wedding01.jpg">
+            </a>
+        </div>
+        <div>
+            <a class="thumbnail-link" href="/img/redbaloons.jpg">
+                <img class="thumbnail" data-lazy="/img/redbaloons.jpg">
+            </a>
+        </div>        
+        <div>
+            <a class="thumbnail-link" href="/img/ianjones01.jpg">
+                <img class="thumbnail" data-lazy="/img/ianjones01.jpg">
+            </a>
+        </div>
+        <div>
+            <a class="thumbnail-link" href="/img/ianjones02.jpg">
+                <img class="thumbnail" data-lazy="/img/ianjones02.jpg">
+            </a>
+        </div>
+        <div>
+            <a class="thumbnail-link" href="/img/ianjones03.jpg">
+                <img class="thumbnail" data-lazy="/img/ianjones03.jpg">
+            </a>
+        </div>     
+        <div>
+            <a class="thumbnail-link" href="/img/redbaloonsBW.jpg">
+                <img class="thumbnail" data-lazy="/img/redbaloonsBW.jpg">
+            </a>
+        </div>           
     </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('.slickDiv').slick({
+  slidesToShow: 3,lazyLoad: 'ondemand',
+  autoplay: true,
+    arrows: false,
+  autoplaySpeed: 2500,
+  responsive: [
+                {
+      breakpoint: 1000,
+      settings: {
+        arrows: false,
+        slidesToShow: 3
+      }
+    },
+          {
+      breakpoint: 900,
+      settings: {
+        arrows: false,
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+    $('.thumbnail-link').magnificPopup({type:'image'});    
+})
+</script>
