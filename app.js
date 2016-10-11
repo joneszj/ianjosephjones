@@ -27,6 +27,7 @@ app.use("/view",express.static(__dirname + "/views"));
 app.use("/vid",express.static(__dirname + "/public/video"));
 
 app.use('/', routes);
+app.use('/carousel', routes);
 app.use('/about', routes);
 app.use('/portfolio', routes);
 app.use('/experience', routes);

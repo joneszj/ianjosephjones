@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', null);
 });
 
+router.get('/carousel', function(req, res, next) {
+  
+});
+
 module.exports = router;
