@@ -6,24 +6,18 @@ $(document).ready(function(){
     $('.menu-items li').fadeIn(timeout * 1.5).css("display","inline-block");
 });
 
-// script.js
-
-    // create the module and name it app
-    var app = angular.module('ijj', ['ngRoute']);
+    var app = angular.module('ijj', ['ngRoute', 'ngAnimate']);
 
         app.config(function($routeProvider, $locationProvider) {
         $routeProvider
-            // route for the home page
             .when('/', {
                 templateUrl : '/view/home.html',
                 controller  : 'mainController'
             })
-            // route for the about page
             .when('/about', {
                 templateUrl : '/view/about.html',
                 controller  : 'mainController'
             })
-            // route for the contact page
             .when('/portfolio', {
                 templateUrl : '/view/portfolio.html',
                 controller  : 'mainController'
