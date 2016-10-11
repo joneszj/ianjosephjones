@@ -41,13 +41,20 @@
 <script>
 $(document).ready(function(){
     $('.slickDiv').slick({
-  slidesToShow: 3,lazyLoad: 'ondemand',
+  slidesToShow: 5,lazyLoad: 'ondemand',
   autoplay: true,
     arrows: false,
   autoplaySpeed: 2500,
   responsive: [
+                      {
+      breakpoint: 1500,
+      settings: {
+        arrows: false,
+        slidesToShow: 4
+      }
+    },
                 {
-      breakpoint: 1000,
+      breakpoint: 1200,
       settings: {
         arrows: false,
         slidesToShow: 3

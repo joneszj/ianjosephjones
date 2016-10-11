@@ -322,12 +322,12 @@ footer a:target {
 /***** Content *****/
 
 .container {
-    position: absolute;
-    top: 50%;
+    /*position: absolute;*/
+    margin-top: 7%;
     font-size: 2em;
-    left: 50%;
+    /*left: 50%;*/
     width: 100%;
-    transform: translateX(-50%) translateY(-50%);
+    /*transform: translateX(-50%) translateY(-50%);*/
 }
 
 .container h1 {
@@ -351,6 +351,7 @@ footer a:target {
     }
 }
 
+/***** carousel *****/
 .slickDiv {
     margin: 3%;
 }
@@ -358,4 +359,9 @@ footer a:target {
 .thumbnail {
     height: 300px;
     width: 100%;
+}
+
+.slick-initialized .slick-slide {
+    margin-left: 3px;
+    margin-right: 3px;
 }
