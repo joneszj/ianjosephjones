@@ -33,8 +33,12 @@ $(document).ready(function(){
             .when('/inquire', {
                 templateUrl : '/view/inquire.html',
                 controller  : 'mainController'
-            });                                    
-            //.otherwise('/');
+            })
+            .when('/blog', {
+                templateUrl : '/view/blog.html',
+                controller  : 'mainController'
+            })                             
+            .otherwise('/');
             $locationProvider.html5Mode(true);
     });
 

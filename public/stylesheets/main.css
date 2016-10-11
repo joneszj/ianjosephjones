@@ -36,6 +36,21 @@
     z-index: -99;
 }
 
+.fullscreen-bg__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -99;
+}
+
 @media (max-width: 816px) {
     .fullscreen-bg {
         background: url('/img/redbaloons.jpg') center center / cover no-repeat;
@@ -50,13 +65,13 @@
 
 footer {
     display: none;
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 1rem;
+    padding: .6rem;
     font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.15);
     text-align: center;
     color: #ffffff;
     font-family: newbskvll_btitalic, Times, Georgia, serif;
@@ -64,7 +79,7 @@ footer {
 
 footer a,
 footer a:visited {
-    color: #CFCFC4;
+    color: rgba(0, 0, 0, 0.65);
     transition: color 0.3s ease-out, background-color 0.3s ease-out, font-color 0.3s ease-out;
     -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out, font-color 0.3s ease-out;
 }
@@ -245,30 +260,7 @@ footer a:target {
 }
 
 
-/***** Content *****/
 
-.container {
-    position: absolute;
-    top: 50%;
-    font-size: 2em;
-    left: 50%;
-    width: 100%;
-    transform: translateX(-50%) translateY(-50%);
-}
-
-.container h1 {
-    font-family: 'Playfair Display SC', serif;
-}
-
-.container p {
-    font-family: newbskvll_btitalic,Times,Georgia,serif;
-    padding-right: 3%;
-    padding-left: 3%;
-}
-
-.centered {
-    text-align: center;
-}
 
 .ghost-button {
     display: inline-block;
@@ -324,4 +316,30 @@ footer a:target {
 }
 .ng-leave.ng-leave-active {
   opacity:0;
+}
+
+
+/***** Content *****/
+
+.container {
+    position: absolute;
+    top: 50%;
+    font-size: 2em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.container h1 {
+    font-family: 'Playfair Display SC', serif;
+}
+
+.container p {
+    font-family: newbskvll_btitalic,Times,Georgia,serif;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.centered {
+    text-align: center;
 }
