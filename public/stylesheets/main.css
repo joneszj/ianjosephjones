@@ -1,4 +1,5 @@
 /***** Background *****/
+
 body {
     background-color: #000;
 }
@@ -63,19 +64,22 @@ body {
     }
 }
 
-a, a:visited {
+a,
+a:visited {
     text-decoration: none;
     color: #fff;
     /*color: #F5F5DC;*/
     transition: color 0.3s ease-out, background-color 0.3s ease-out, font-color 0.3s ease-out;
-    -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out, font-color 0.3s ease-out; 
+    -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out, font-color 0.3s ease-out;
 }
+
 a:hover {
     text-decoration: none;
     color: #FFB347;
     transition: color 0.3s ease-in, background-color 0.3s ease-in, font-color 0.3s ease-in;
     -webkit-transition: color 0.3s ease-in, background-color 0.3s ease-in, font-color 0.3s ease-in;
 }
+
 
 /***** Footer *****/
 
@@ -86,7 +90,7 @@ footer {
     bottom: 0;
     left: 0;
     padding: .6rem;
-    font-size: 2.5vmin;    
+    font-size: 2.5vmin;
     background-color: rgba(0, 0, 0, 0.45);
     text-align: center;
     color: #fff;
@@ -142,6 +146,7 @@ footer a:target {
     /*max-width: 1000px;*/
     margin: auto;
 }
+
 .menu a:visited,
 .menu a {
     color: #fff;
@@ -173,7 +178,7 @@ footer a:target {
 }
 
 .menu-items a {
-    font-size: 3vmin;    
+    font-size: 3vmin;
     text-decoration: none;
 }
 
@@ -236,14 +241,16 @@ footer a:target {
         left: 0;
         text-align: center;
         right: 0;
-        z-index: 1;
         width: 100%;
-        height: 100%;
+        /*height: 100%;*/
+        z-index: 10;
         background-color: rgba(0, 0, 0, 0);
     }
     .fixed-nav-bar li {
-            height: 20vmin;
+        height: 20vmin;
     }
+
+
 
     .menu {
         position: relative;
@@ -262,11 +269,11 @@ footer a:target {
         padding-top: 10%;
         margin-top: 0px;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.80);
     }
     .menu-items li {
         display: block;
         text-align: center;
+        background-color: rgba(0, 0, 0, .7);
     }
     .menu-items a {
         font-size: 6vmin;
@@ -282,11 +289,14 @@ footer a:target {
     @media screen and (orientation:landscape) {
         .fixed-nav-bar li {
             height: 10vmin;
+            line-height: 10px;
+        }
+        .menu-items a {
+            font-size: 10vmin;
+            line-height: 25px;
         }
     }
 }
-
-
 
 @media only screen and (max-width: 220px) {
     .sitename,
@@ -295,14 +305,11 @@ footer a:target {
     }
 }
 
-
-
-
 .ghost-button {
     display: inline-block;
     width: 30vmin;
     padding: 8px;
-    font-size: 7vmin;    
+    font-size: 7vmin;
     color: #fff;
     /*color: #F5F5DC;*/
     border: 2px solid #fff;
@@ -314,7 +321,6 @@ footer a:target {
     transition: color 0.3s ease-out, background-color 0.3s ease-out, font-color 0.3s ease-out;
     -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out, font-color 0.3s ease-out;
 }
-
 
 .margin-two {
     margin: 2em;
@@ -337,24 +343,31 @@ footer a:target {
     padding-bottom: 10%;
 }
 
+
 /* The starting CSS styles for the enter animation */
+
 .ng-enter {
-  transition:0.7s linear all;
-  opacity:0;
+    transition: 0.7s linear all;
+    opacity: 0;
 }
+
 
 /* The finishing CSS styles for the enter animation */
+
 .ng-enter.ng-enter-active {
-  opacity:1;
+    opacity: 1;
 }
 
+
 /* now the element will fade out before it is removed from the DOM */
+
 .ng-leave {
-  transition:0.2s linear all;
-  opacity:1;
+    transition: 0.2s linear all;
+    opacity: 1;
 }
+
 .ng-leave.ng-leave-active {
-  opacity:0;
+    opacity: 0;
 }
 
 
@@ -362,9 +375,10 @@ footer a:target {
 
 .container {
     color: #fff;
+    /*z-index:100;*/
     /*color: #F5F5DC;*/
     text-shadow: horizontal-offset vertical-offset blur color;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     /*position: absolute;*/
     margin-top: 7%;
     /*left: 50%;*/
@@ -373,16 +387,14 @@ footer a:target {
 }
 
 .container h1 {
-    font-family: "Futura PT W02 Heavy",Futura,"Trebuchet MS",Arial,sans-serif;
+    font-family: "Futura PT W02 Heavy", Futura, "Trebuchet MS", Arial, sans-serif;
     font-size: 12.25vmin;
     letter-spacing: .185vmin;
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-                0px 8px 13px rgba(0,0,0,0.1),
-                0px 18px 23px rgba(0,0,0,0.1);
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .container p {
-    font-family: newbskvll_btitalic,Times,Georgia,serif;
+    font-family: newbskvll_btitalic, Times, Georgia, serif;
     color: #fff;
     /*color: #F5F5DC;*/
     font-size: 5.25vmin;
@@ -406,34 +418,34 @@ footer a:target {
 }
 
 #home_p {
-    font-family: newbskvll_btitalic,Times,Georgia,serif;
+    font-family: newbskvll_btitalic, Times, Georgia, serif;
     font-size: 7.25vmin;
-    font-style: italic;    
+    font-style: italic;
 }
 
 .home_b {
-    font-family: newbskvll_btitalic,Times,Georgia,serif;
-    font-style: italic;    
+    font-family: newbskvll_btitalic, Times, Georgia, serif;
+    font-style: italic;
 }
-
 
 @media only screen and (max-width: 816px) {
     .container {
         font-size: 1.3em;
     }
+    .centered {
+        position: absolute;
+        margin-top: initial;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%) translateY(-40%);
+        text-align: center;
+    }
+}
 
-.centered {
-    position: absolute;
-    margin-top: initial;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translateX(-50%) translateY(-40%);
-    text-align: center;
-}
-}
 
 /***** carousel *****/
+
 .slickDiv {
     margin: 3%;
 }
@@ -448,89 +460,105 @@ footer a:target {
     margin-right: 3px;
 }
 
+
 /***** map *****/
 
 .mapImg {
     width: 60vmin;
 }
 
+
 /***** arrow bounce *****/
+
 @-moz-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: rotate(180deg);
-    -moz-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -moz-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    -moz-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: rotate(180deg);
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
 }
+
 @-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: rotate(180deg);
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    -webkit-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: rotate(180deg);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
 }
+
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -moz-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    -moz-transform: translateY(-15px);
-    -ms-transform: translateY(-15px);
-    -webkit-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
 }
 
 .Darrow {
     display: none;
-    z-index: 10;
-  position: fixed;
-  bottom: -1px;
-  left: 98%;
-  margin-left: -20px;
-  width: 40px;
-  height: 40px;
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=);
-  background-size: contain;
+    /*z-index: 10;*/
+    position: fixed;
+    bottom: -1px;
+    left: 98%;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=);
+    background-size: contain;
 }
 
 .bounce {
-  -moz-animation: bounce 2s 1;
-  -webkit-animation: bounce 2s 1;
-  animation: bounce 2s 1;
+    -moz-animation: bounce 2s 1;
+    -webkit-animation: bounce 2s 1;
+    animation: bounce 2s 1;
 }
 
 @media only screen and (max-width: 816px) {
-    .Darrow{
+    .Darrow {
         margin-left: -40px;
     }
 }
-
 
 a.show:hover {
     text-decoration: none;
