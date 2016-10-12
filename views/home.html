@@ -2,15 +2,26 @@
         <video loop muted autoplay class="fullscreen-bg__video">
                 <source src="vid/25mb.mp4" type="video/webm">
                 <source src="vid/107mb.mp4" type="video/mp4">
-                <!--<source src="vid/25mb.mp4" type="video/mp4">-->
-                <!--<source src="vid/big_buck_bunny.ogv" type="video/ogg">-->
-                    <!--<source src="http://dev2.slicejack.com/fullscreen-video-demo/video/big_buck_bunny.mp4" type="video/mp4">
-                    <source src="http://dev2.slicejack.com/fullscreen-video-demo/video/big_buck_bunny.ogv" type="video/ogg">
-                    <source src="http://dev2.slicejack.com/fullscreen-video-demo/video/big_buck_bunny.webm" type="video/webm">-->
-            </video>
+        </video>
     </div>
     <div class="container centered">
-        <h1>Passion. Commitment. Forever.</h1>
-        <p>leorm ipsum tenebras lux emoi gar too sin christos kai tu apathanein kerdos leorm ipsdj jahs jlfdsdsfn fdjs the roof upon the road int he forest</p>
-        <a class="ghost-button margin-two" href="#">Inquire</a>
+        <p id="home_p">To Capture</p>
+        <h1 id="ctaHeading" class="home_h1"></h1>
+        <a class="ghost-button home_b margin-bottom-two" href="inquire">forever</a>
     </div>
+    <script>
+        var CTATitle = ["Passion","Commitment","Joy","Love"];
+        var i = 0;
+        function updateCTA() {
+            $("#ctaHeading").fadeOut(2500,function() {
+                i++;
+                if (i > CTATitle.length) { i = 0; }
+                $("#ctaHeading").text(CTATitle[i]);
+                $("#ctaHeading").fadeIn(2500);
+            })
+        }
+        $(document).ready(function(){
+            $("#ctaHeading").text(CTATitle[i]);
+            setInterval(updateCTA,2500);
+        })
+    </script>

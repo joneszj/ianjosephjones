@@ -2,8 +2,11 @@ $(document).ready(function(){
     var timeout = 2500;
     $("html").animate({ opacity: 1}, timeout);
     $('nav').slideDown(timeout);
-    $('footer').slideDown(timeout);
+    //$('footer').slideDown(timeout);
     $('.menu-items li').fadeIn(timeout * 1.5).css("display","inline-block");
+    setTimeout(function(){
+        $('footer *').fadeIn(timeout * 1.5).css("display","inline-block");
+    },2000)
 });
 
     var app = angular.module('ijj', ['ngRoute', 'ngAnimate']);

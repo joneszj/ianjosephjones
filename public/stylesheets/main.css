@@ -67,23 +67,29 @@ body {
 /***** Footer *****/
 
 footer {
-    display: none;
+    /*display: none;*/
     position: fixed;
     right: 0;
     bottom: 0;
     left: 0;
     padding: .6rem;
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.15);
+    font-size: 2.5vmin;    
+    /*background-color: rgba(0, 0, 0, 0.15);*/
     text-align: center;
-    color: #F5F5DC;
+    color: #fff;
+    /*color: #F5F5DC;*/
     font-family: newbskvll_btitalic, Times, Georgia, serif;
+}
+
+footer * {
+    display: none;
 }
 
 footer a,
 footer a:visited {
     text-decoration: none;
-    color: #F5F5DC;
+    color: #fff;
+    /*color: #F5F5DC;*/
     transition: color 0.3s ease-out, background-color 0.3s ease-out, font-color 0.3s ease-out;
     -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out, font-color 0.3s ease-out;
 }
@@ -125,7 +131,8 @@ footer a:target {
 }
 .menu a:visited,
 .menu a {
-    color: #F5F5DC;
+    color: #fff;
+    /*color: #F5F5DC;*/
     transition: color 0.3s ease-out, background-color 0.3s ease-out, font-color 0.3s ease-out;
     -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out, font-color 0.3s ease-out;
 }
@@ -153,6 +160,7 @@ footer a:target {
 }
 
 .menu-items a {
+    font-size: 3vmin;    
     text-decoration: none;
 }
 
@@ -269,10 +277,13 @@ footer a:target {
 
 .ghost-button {
     display: inline-block;
-    width: 200px;
+    width: 30vmin;
     padding: 8px;
-    color: #F5F5DC;
-    border: 2px solid #F5F5DC;
+    font-size: 7vmin;    
+    color: #fff;
+    /*color: #F5F5DC;*/
+    border: 2px solid #fff;
+    /*border: 2px solid #F5F5DC;*/
     text-align: center;
     border-radius: 5px;
     outline: none;
@@ -281,8 +292,13 @@ footer a:target {
     -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out, font-color 0.3s ease-out;
 }
 
+
 .margin-two {
     margin: 2em;
+}
+
+.margin-bottom-two {
+    margin-bottom: 2em;
 }
 
 .ghost-button:hover,
@@ -322,12 +338,12 @@ footer a:target {
 /***** Content *****/
 
 .container {
-    color: #F5F5DC;
+    color: #fff;
+    /*color: #F5F5DC;*/
     text-shadow: horizontal-offset vertical-offset blur color;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     /*position: absolute;*/
     margin-top: 7%;
-    font-size: 2em;
     /*left: 50%;*/
     width: 100%;
     /*transform: translateX(-50%) translateY(-50%);*/
@@ -335,16 +351,17 @@ footer a:target {
 
 .container h1 {
     font-family: "Futura PT W02 Heavy",Futura,"Trebuchet MS",Arial,sans-serif;
-    font-size: 10.25vmin;
+    font-size: 12.25vmin;
     letter-spacing: .185vmin;
-text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                0px 8px 13px rgba(0,0,0,0.1),
+                0px 18px 23px rgba(0,0,0,0.1);
 }
 
 .container p {
     font-family: newbskvll_btitalic,Times,Georgia,serif;
-    color: #F5F5DC;
+    color: #fff;
+    /*color: #F5F5DC;*/
     font-size: 5.25vmin;
     letter-spacing: .185vmin;
     padding-right: 5%;
@@ -354,12 +371,26 @@ text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
 .centered {
     position: absolute;
     margin-top: initial;
-    font-size: 2em;
     top: 50%;
     left: 50%;
     width: 100%;
     transform: translateX(-50%) translateY(-40%);
     text-align: center;
+}
+
+.home_h1 {
+    font-size: 7.25vmin;
+}
+
+#home_p {
+    font-family: newbskvll_btitalic,Times,Georgia,serif;
+    font-size: 7.25vmin;
+    font-style: italic;    
+}
+
+.home_b {
+    font-family: newbskvll_btitalic,Times,Georgia,serif;
+    font-style: italic;    
 }
 
 
