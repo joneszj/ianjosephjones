@@ -125,7 +125,7 @@ footer a:target {
     left: 0;
     text-align: center;
     right: 0;
-    z-index: 1;
+   
     width: 100%;
     height: 80px;
     background-color: rgba(0, 0, 0, 0.45);
@@ -236,7 +236,6 @@ footer a:target {
         left: 0;
         text-align: center;
         right: 0;
-        z-index: 1;
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0);
@@ -257,6 +256,7 @@ footer a:target {
         margin-left: 0px;
     }
     .menu-items {
+        z-index: 10;
         display: none;
         width: 100%;
         padding-top: 10%;
