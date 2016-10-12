@@ -2,12 +2,25 @@ $(document).ready(function(){
     var timeout = 2500;
     $("html").animate({ opacity: 1}, timeout);
     $('nav').slideDown(timeout);
+    openNav(timeout);
+    $(window).resize(function(){
+        openNav(timeout);
+    });
+    $(".show").click(function(){
+        $(".menu-items").slideToggle();
+    })
     setInterval(bouncy,10)
-    $('.menu-items li').fadeIn(timeout * 1.5).css("display","inline-block");
-    setTimeout(function(){
-        $('footer, footer *').fadeIn(timeout * 1.5).css("display","inline-block");
-    },2000)
 });
+
+function openNav(timeout){
+    if (window.innerWidth >= 816) {
+        $('.menu-items').show();
+        $('.menu-items li').fadeIn(timeout * 1.5).css("display","inline-block");
+        setTimeout(function(){
+            $('footer, footer *').fadeIn(timeout * 1.5).css("display","inline-block");
+        },2000)
+    }
+}
 
 function bouncy(){
     if($(window).scrollTop() + $(window).height() >= getDocHeight() - 100) {
