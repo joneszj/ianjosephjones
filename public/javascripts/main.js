@@ -2,13 +2,30 @@ $(document).ready(function(){
     var timeout = 2500;
     $("html").animate({ opacity: 1}, timeout);
     $('nav').slideDown(timeout);
-    //$('footer').slideDown(timeout);
+    setInterval(bouncy,10)
     $('.menu-items li').fadeIn(timeout * 1.5).css("display","inline-block");
     setTimeout(function(){
-        $('footer *').fadeIn(timeout * 1.5).css("display","inline-block");
+        $('footer, footer *').fadeIn(timeout * 1.5).css("display","inline-block");
     },2000)
 });
 
+function bouncy(){
+    if($(window).scrollTop() + $(window).height() >= getDocHeight() - 100) {
+        $("#scrollDown").fadeOut();
+    }
+    else {
+        $("#scrollDown").fadeIn();
+    }
+}
+
+function getDocHeight() {
+   var D = document;
+   return Math.max(
+       D.body.scrollHeight, D.documentElement.scrollHeight,
+       D.body.offsetHeight, D.documentElement.offsetHeight,
+       D.body.clientHeight, D.documentElement.clientHeight
+   );
+}
     var app = angular.module('ijj', ['ngRoute', 'ngAnimate']);
 
         app.config(function($routeProvider, $locationProvider) {
