@@ -8,6 +8,11 @@ $(document).ready(function(){
     });
     $(".show").click(function(){
         $(".menu-items").slideToggle();
+    });
+    $('.menu-items li').click(function(){
+        if (window.innerWidth <= 816) {
+            $(".menu-items").slideUp();
+        }
     })
     setInterval(bouncy,10)
 });
