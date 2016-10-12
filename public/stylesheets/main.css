@@ -56,10 +56,10 @@ body {
 
 @media (max-width: 816px) {
     .fullscreen-bg {
-        /*background: url('/img/redbaloonsBW.jpg') center center / cover no-repeat;*/
+        background: url('/img/ianjones03.jpg') center center / cover no-repeat;
     }
     .fullscreen-bg__video {
-        /*display: none;*/
+        display: none;
     }
 }
 
