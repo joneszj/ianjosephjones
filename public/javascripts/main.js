@@ -8,6 +8,11 @@ $(document).ready(function(){
     });
     $(".show").click(function(){
         $(".menu-items").slideToggle();
+        if ($('html,body').css("overflow") == "hidden") {
+            $('html,body').css("overflow","")
+        } else {
+            $('html,body').css("overflow","hidden")
+        }
     });
     $('.menu-items li').click(function(){
         if (window.innerWidth <= 816) {
@@ -19,6 +24,7 @@ $(document).ready(function(){
 
 function openNav(timeout){
     if (window.innerWidth >= 816) {
+        $('html,body').css("overflow","");
         $('.menu-items').show();
         $('.menu-items li').fadeIn(timeout * 1.5).css("display","inline-block");
         setTimeout(function(){
