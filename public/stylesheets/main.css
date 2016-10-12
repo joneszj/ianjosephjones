@@ -1,4 +1,7 @@
 /***** Background *****/
+body {
+    background-color: #000;
+}
 
 .fullscreen-bg {
     position: fixed;
@@ -13,7 +16,7 @@
 .fullscreen-bg:before {
     content: '';
     position: absolute;
-    background: rgba(255, 255, 255, 0.65);
+    background: rgba(0, 0, 0, 0.35);
     top: 0;
     right: 0;
     bottom: 0;
@@ -73,19 +76,21 @@ footer {
     font-size: 20px;
     background-color: rgba(0, 0, 0, 0.15);
     text-align: center;
-    color: #ffffff;
+    color: #F5F5DC;
     font-family: newbskvll_btitalic, Times, Georgia, serif;
 }
 
 footer a,
 footer a:visited {
-    color: rgba(0, 0, 0, 0.65);
+    text-decoration: none;
+    color: #F5F5DC;
     transition: color 0.3s ease-out, background-color 0.3s ease-out, font-color 0.3s ease-out;
     -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out, font-color 0.3s ease-out;
 }
 
 footer a:hover,
 footer a:target {
+    text-decoration: none;
     color: #FFB347;
     transition: color 0.3s ease-in, background-color 0.3s ease-in, font-color 0.3s ease-in;
     -webkit-transition: color 0.3s ease-in, background-color 0.3s ease-in, font-color 0.3s ease-in;
@@ -120,7 +125,7 @@ footer a:target {
 }
 .menu a:visited,
 .menu a {
-    color: antiquewhite;
+    color: #F5F5DC;
     transition: color 0.3s ease-out, background-color 0.3s ease-out, font-color 0.3s ease-out;
     -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out, font-color 0.3s ease-out;
 }
@@ -266,8 +271,8 @@ footer a:target {
     display: inline-block;
     width: 200px;
     padding: 8px;
-    color: #000;
-    border: 2px solid #000;
+    color: #F5F5DC;
+    border: 2px solid #F5F5DC;
     text-align: center;
     border-radius: 5px;
     outline: none;
@@ -282,13 +287,8 @@ footer a:target {
 
 .ghost-button:hover,
 .ghost-button:active {
-    background-color: #fff;
-    /* fallback */
-    background-color: #000;
-    border-color: #fff;
-    /* fallback */
     border-color: #000;
-    background-color: #fff;
+    background-color: #FFB347;
     color: #000;
     transition: color 0.3s ease-in, background-color 0.3s ease-in, font-color 0.3s ease-in;
     -webkit-transition: color 0.3s ease-in, background-color 0.3s ease-in, font-color 0.3s ease-in;
@@ -322,6 +322,9 @@ footer a:target {
 /***** Content *****/
 
 .container {
+    color: #F5F5DC;
+    text-shadow: horizontal-offset vertical-offset blur color;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     /*position: absolute;*/
     margin-top: 7%;
     font-size: 2em;
@@ -331,13 +334,21 @@ footer a:target {
 }
 
 .container h1 {
-    font-family: 'Playfair Display SC', serif;
+    font-family: "Futura PT W02 Heavy",Futura,"Trebuchet MS",Arial,sans-serif;
+    font-size: 10.25vmin;
+    letter-spacing: .185vmin;
+text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
 }
 
 .container p {
     font-family: newbskvll_btitalic,Times,Georgia,serif;
-    padding-right: 3%;
-    padding-left: 3%;
+    color: #F5F5DC;
+    font-size: 5.25vmin;
+    letter-spacing: .185vmin;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 .centered {
