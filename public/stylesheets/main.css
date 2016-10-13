@@ -63,7 +63,12 @@ body {
     .fullscreen-bg {
         background: url('/img/ianjones03.jpg') center center / cover no-repeat;
     }
+
+    .fullscreen-bg.port {
+        background: url('') center center / cover no-repeat;
+    }
     .fullscreen-bg__video {
+        background: url('/img/ianjones03.jpg') center center / cover no-repeat;
         display: none;
     }
 }

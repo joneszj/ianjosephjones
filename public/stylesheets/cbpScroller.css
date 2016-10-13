@@ -132,27 +132,31 @@
 
 /* Example media queries */
 
-/*@media screen and (max-width: 73.5em) {
+@media screen and (max-width: 816px) {
 	.cbp-so-scroller {
 		font-size: 65%;
 	}
 
 	.cbp-so-section h2 {
-		margin: 0;
-	}
-
-	.cbp-so-side img {
-		max-width: 120%;
-	}
-}
-
-@media screen and (max-width: 41.125em) {
-	.cbp-so-side {
-		float: none;
+		margin: auto;
 		width: 100%;
 	}
 
 	.cbp-so-side img {
+		margin: auto;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 816px) {
+	.cbp-so-side {
+		float: none;
+		width: 100%;
+		margin: auto;
+	}
+
+	.cbp-so-side img {
+		width: 100%;
 		max-width: 100%;
 	}
-}*/
+}
