@@ -104,23 +104,6 @@ footer * {
     display: none;
 }
 
-footer a,
-footer a:visited {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s ease-out, background-color 0.3s ease-out, font-color 0.3s ease-out;
-    -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out, font-color 0.3s ease-out;
-}
-
-footer a:hover,
-footer a:target {
-    text-decoration: none;
-    color: #FFB347;
-    transition: color 0.3s ease-in, background-color 0.3s ease-in, font-color 0.3s ease-in;
-    -webkit-transition: color 0.3s ease-in, background-color 0.3s ease-in, font-color 0.3s ease-in;
-}
-
-
 /***** Navigation *****/
 
 .fixed-nav-bar {
@@ -145,20 +128,6 @@ footer a:target {
 .menu {
     width: 100%;
     margin: auto;
-}
-
-.menu a:visited,
-.menu a {
-    color: #fff;
-    transition: color 0.3s ease-out, background-color 0.3s ease-out, font-color 0.3s ease-out;
-    -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out, font-color 0.3s ease-out;
-}
-
-.menu a:hover,
-.menu a:target {
-    color: #FFB347;
-    transition: color 0.3s ease-in, background-color 0.3s ease-in, font-color 0.3s ease-in;
-    -webkit-transition: color 0.3s ease-in, background-color 0.3s ease-in, font-color 0.3s ease-in;
 }
 
 .menu-items {
@@ -193,9 +162,7 @@ footer a:target {
 
 @media only screen and (max-width: 1000px) {
     .menu {
-        width: 100%;
         max-width: 960px;
-        margin: auto;
     }
     .menu-items li {
         margin-right: 12px;
@@ -233,13 +200,6 @@ footer a:target {
 
 @media only screen and (max-width: 816px) {
     .fixed-nav-bar {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        text-align: center;
-        right: 0;
-        width: 100%;
         z-index: 10;
         background-color: rgba(0, 0, 0, 0);
     }
@@ -247,18 +207,10 @@ footer a:target {
         height: 20vmin;
     }
 
-
-
     .menu {
         position: relative;
         width: 100%;
         height: 100%;
-    }
-    .sitename {
-        position: absolute;
-        top: 0;
-        left: 15px;
-        margin-left: 0px;
     }
     .menu-items {
         display: none;
@@ -302,6 +254,8 @@ footer a:target {
     }
 }
 
+/***** button *****/
+
 .ghost-button {
     display: inline-block;
     width: 30vmin;
@@ -317,14 +271,6 @@ footer a:target {
     -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out, font-color 0.3s ease-out;
 }
 
-.margin-two {
-    margin: 2em;
-}
-
-.margin-bottom-two {
-    margin-bottom: 2em;
-}
-
 .ghost-button:hover,
 .ghost-button:active {
     border-color: #000;
@@ -334,10 +280,21 @@ footer a:target {
     -webkit-transition: color 0.3s ease-in, background-color 0.3s ease-in, font-color 0.3s ease-in;
 }
 
+/***** general *****/
+
+.margin-two {
+    margin: 2em;
+}
+
+.margin-bottom-two {
+    margin-bottom: 2em;
+}
+
 .padding-bottom {
     padding-bottom: 10%;
 }
 
+/***** ng-view *****/
 
 /* The starting CSS styles for the enter animation */
 
@@ -346,13 +303,11 @@ footer a:target {
     opacity: 0;
 }
 
-
 /* The finishing CSS styles for the enter animation */
 
 .ng-enter.ng-enter-active {
     opacity: 1;
 }
-
 
 /* now the element will fade out before it is removed from the DOM */
 
@@ -364,7 +319,6 @@ footer a:target {
 .ng-leave.ng-leave-active {
     opacity: 0;
 }
-
 
 /***** Content *****/
 
@@ -450,13 +404,11 @@ footer a:target {
     margin-right: 3px;
 }
 
-
 /***** map *****/
 
 .mapImg {
     width: 60vmin;
 }
-
 
 /***** arrow bounce *****/
 
@@ -527,7 +479,6 @@ footer a:target {
 
 .Darrow {
     display: none;
-    /*z-index: 10;*/
     position: fixed;
     bottom: -1px;
     left: 98%;
@@ -554,3 +505,4 @@ a.show:hover {
     text-decoration: none;
     color: #fff;
 }
+
