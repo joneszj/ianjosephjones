@@ -25,9 +25,18 @@ $(document).ready(function () {
                 $('html,body').css("overflow", "hidden");
             }
         }
-    })
+    });
+    $("#scrollDown").click(function(){
+        scrollToAnchor(".bounce");
+    });
     setInterval(bouncy, 100)
 });
+
+function scrollToAnchor(aid){
+    // var aTag = $(".bounce");
+    // var offset = window.innerHeight;
+    // $('html,body').animate({scrollTop: offset},'slow');
+}
 
 function openNav(timeout) {
     if (window.innerWidth >= 816) {

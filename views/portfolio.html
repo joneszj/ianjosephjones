@@ -3,7 +3,6 @@
 </div>
 <div class="container">
     <h1>Portfolio</h1>
-    <p>portfolio page</p>
 </div>
 
 <div id="cbp-so-scroller" class="cbp-so-scroller">
@@ -178,16 +177,17 @@
     $(document).ready(function() {
         var oriBgSrc = "/img/wedding01.jpg";//$(".fullscreen-bg__image").attr("src");
         var cont = true;
-        window.scrollTo(0, 0);
+        $(".cbp-so-section").first().addClass("cbp-so-init");
+        $(".cbp-so-section").first().addClass("cbp-so-animate");
         setInterval(function() {
             $.each($(".cbp-so-section"), function() {
                 if (!$(window).scrollTop()) {
                     if ($(".fullscreen-bg__image").attr("src") != oriBgSrc && cont) {
-                        $(".fullscreen-bg__image").fadeOut(function() {
-                            $(".fullscreen-bg__image").attr("src", oriBgSrc);
-                        });
-                        $(".fullscreen-bg__image").fadeIn();
                         cont = false;
+                        $(".fullscreen-bg__image").fadeOut("fast",function() {
+                            $(".fullscreen-bg__image").attr("src", oriBgSrc);
+                        $(".fullscreen-bg__image").fadeIn();
+                        });
                         return false;
                     }
                     return false;
@@ -196,11 +196,11 @@
                         var thisSrc = $(this).find("input").val() == "" ? $(this).find("img").attr("src") : $(this).find("input").val();
                         var bgSrc = $(".fullscreen-bg__image").attr("src")
                         if (thisSrc != bgSrc && cont) {
-                            $(".fullscreen-bg__image").fadeOut(function() {
-                                $(".fullscreen-bg__image").attr("src", thisSrc);
-                            });
-                            $(".fullscreen-bg__image").fadeIn();
                             cont = false;
+                            $(".fullscreen-bg__image").fadeOut("fast",function() {
+                                $(".fullscreen-bg__image").attr("src", thisSrc);
+                            $(".fullscreen-bg__image").fadeIn();
+                            });
                             return false;
                         }
                         return false;
@@ -208,6 +208,6 @@
                 }
             });
             cont = true;
-        }, 1000)
+        }, 50)
     })
 </script>
