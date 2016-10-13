@@ -287,6 +287,13 @@ footer * {
 
 /***** general *****/
 
+img {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+}
+
 .margin-two {
     margin: 2em;
 }
@@ -375,6 +382,23 @@ footer * {
 .home_b {
     font-family: newbskvll_btitalic, Times, Georgia, serif;
     font-style: italic;
+}
+
+.inquire_form {
+    display: inline-block;
+    border-radius: 15px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.inquire_form input[type="text"] {
+    width: 20em;
+    height: 3em;
+}
+
+.inquire_form textarea {
+    width: 20em;
+    height: 20em;
 }
 
 @media only screen and (max-width: 816px) {

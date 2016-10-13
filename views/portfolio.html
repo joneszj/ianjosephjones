@@ -3,6 +3,17 @@
 </div>
 <div class="container">
     <h1>Portfolio</h1>
+    <p>
+Lorem ipsum dolor sit amet, fabulas imperdiet nec ei. Sea alia liber graeco ea, ex mel mundi repudiare. Velit iisque ad eam, eu cum habeo eligendi. Perpetua deterruisset comprehensam vim cu.
+    </p>
+
+    <p>
+Eu pri magna errem sententiae, his ne fugit legendos gloriatur. Definiebas definitionem vis ea, ut qui facer omnes aperiri, detracto consulatu contentiones ea duo. An vim antiopam constituto elaboraret. Te scripta cotidieque pro, alii sint et cum, id liber prodesset his.
+    </p>
+
+    <p>
+Ad reque mundi delenit ius, putant ornatus inimicus an mel. Ea duo posse neglegentur, per malis maiestatis ex. Ipsum quando noluisse id qui. In erat rebum pro. Sed ei tota tractatos. Vel autem iusto an.        
+    </p>
 </div>
 
 <div id="cbp-so-scroller" class="cbp-so-scroller">
@@ -15,7 +26,7 @@
                 <h2>the diaz wedding</h2>
             </a>
             <p>
-                some description of the event
+                Lorem ipsum dolor sit amet, fabulas imperdiet nec ei. Sea alia liber graeco ea, ex mel mundi repudiare. Velit iisque ad eam, eu cum habeo eligendi. Perpetua deterruisset comprehensam vim cu.
             </p>
         </article>
         <figure class="cbp-so-side cbp-so-side-right">
@@ -38,7 +49,7 @@
                 <h2>katie & james’s engagement session, jupiter, fl</h2>
             </a>
             <p>
-                some description of the event
+                Lorem ipsum dolor sit amet, fabulas imperdiet nec ei. Sea alia liber graeco ea, ex mel mundi repudiare. Velit iisque ad eam, eu cum habeo eligendi. Perpetua deterruisset comprehensam vim cu.
             </p>
         </article>
     </section>
@@ -51,7 +62,7 @@
                 <h2>the monzon wedding</h2>
             </a>
             <p>
-                some description of the event
+                Lorem ipsum dolor sit amet, fabulas imperdiet nec ei. Sea alia liber graeco ea, ex mel mundi repudiare. Velit iisque ad eam, eu cum habeo eligendi. Perpetua deterruisset comprehensam vim cu.
             </p>
         </article>
         <figure class="cbp-so-side cbp-so-side-right">
@@ -74,7 +85,7 @@
                 <h2>the abreu wedding</h2>
             </a>
             <p>
-                some description of the event
+                Lorem ipsum dolor sit amet, fabulas imperdiet nec ei. Sea alia liber graeco ea, ex mel mundi repudiare. Velit iisque ad eam, eu cum habeo eligendi. Perpetua deterruisset comprehensam vim cu.
             </p>
         </article>
     </section>
@@ -87,7 +98,7 @@
                 <h2>the ortiz wedding</h2>
             </a>
             <p>
-                some description of the event
+                Lorem ipsum dolor sit amet, fabulas imperdiet nec ei. Sea alia liber graeco ea, ex mel mundi repudiare. Velit iisque ad eam, eu cum habeo eligendi. Perpetua deterruisset comprehensam vim cu.
             </p>
         </article>
         <figure class="cbp-so-side cbp-so-side-right">
@@ -110,7 +121,7 @@
                 <h2>the johnson wedding</h2>
             </a>
             <p>
-                some description of the event
+                Lorem ipsum dolor sit amet, fabulas imperdiet nec ei. Sea alia liber graeco ea, ex mel mundi repudiare. Velit iisque ad eam, eu cum habeo eligendi. Perpetua deterruisset comprehensam vim cu.
             </p>
         </article>
     </section>
@@ -123,7 +134,7 @@
                 <h2>flower & fringe</h2>
             </a>
             <p>
-                some description of the event
+                Lorem ipsum dolor sit amet, fabulas imperdiet nec ei. Sea alia liber graeco ea, ex mel mundi repudiare. Velit iisque ad eam, eu cum habeo eligendi. Perpetua deterruisset comprehensam vim cu.
             </p>
         </article>
         <figure class="cbp-so-side cbp-so-side-right">
@@ -146,7 +157,7 @@
                 <h2>the abreu wedding</h2>
             </a>
             <p>
-                some description of the event
+                Lorem ipsum dolor sit amet, fabulas imperdiet nec ei. Sea alia liber graeco ea, ex mel mundi repudiare. Velit iisque ad eam, eu cum habeo eligendi. Perpetua deterruisset comprehensam vim cu.
             </p>
         </article>
     </section>
@@ -175,6 +186,7 @@
         );
     }
     $(document).ready(function() {
+    window.scrollTo(0, 0);
         var oriBgSrc = "/img/wedding01.jpg";//$(".fullscreen-bg__image").attr("src");
         var cont = true;
         $(".cbp-so-section").first().addClass("cbp-so-init");
@@ -184,7 +196,7 @@
                 if (!$(window).scrollTop()) {
                     if ($(".fullscreen-bg__image").attr("src") != oriBgSrc && cont) {
                         cont = false;
-                        $(".fullscreen-bg__image").fadeOut("fast",function() {
+                        $(".fullscreen-bg__image").fadeOut(function() {
                             $(".fullscreen-bg__image").attr("src", oriBgSrc);
                         $(".fullscreen-bg__image").fadeIn();
                         });
@@ -197,7 +209,7 @@
                         var bgSrc = $(".fullscreen-bg__image").attr("src")
                         if (thisSrc != bgSrc && cont) {
                             cont = false;
-                            $(".fullscreen-bg__image").fadeOut("fast",function() {
+                            $(".fullscreen-bg__image").fadeOut(function() {
                                 $(".fullscreen-bg__image").attr("src", thisSrc);
                             $(".fullscreen-bg__image").fadeIn();
                             });
@@ -208,6 +220,6 @@
                 }
             });
             cont = true;
-        }, 50)
+        }, 300)
     })
 </script>
