@@ -290,6 +290,9 @@ footer * {
 video {
     border: 1px solid #ddd;
     border-radius: 15px;
+    width: 100%    !important;
+    height: auto   !important;
+    max-width: 50%;
 }
 
 img {
@@ -420,6 +423,9 @@ img {
         transform: translateX(-50%) translateY(-40%);
         text-align: center;
     }
+    video {
+    max-width: 70%;
+}
 }
 
 hr {
