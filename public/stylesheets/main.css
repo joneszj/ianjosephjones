@@ -287,6 +287,11 @@ footer * {
 
 /***** general *****/
 
+video {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
 img {
     border: 1px solid #ddd;
     border-radius: 15px;
@@ -391,6 +396,7 @@ img {
     background: rgba(0, 0, 0, 0.35);
 }
 
+
 .inquire_form input[type="text"] {
     width: 20em;
     height: 3em;
@@ -416,6 +422,37 @@ img {
     }
 }
 
+hr {
+    border-color: white;
+    border-bottom-style: groove;
+}
+
+blockquote {
+    border:none;
+    /*font-family:Georgia, "Times New Roman", Times, serif;
+    margin-bottom:-30px;*/
+    quotes: "\201C""\201D""\2018""\2019";
+    line-height: 6vmin;
+}
+
+blockquote p:before { 
+    content: open-quote;
+    font-weight: bold;
+    font-size:6vmin;
+    color:#FFB347;
+} 
+
+blockquote p:after { 
+    content: close-quote;
+    font-weight: bold;
+    font-size:6vmin;
+    color:#FFB347;
+}
+
+.quote-author {
+    font-size: 4vmin !important;
+    padding-left: 60% !important;   
+}
 
 /***** carousel *****/
 

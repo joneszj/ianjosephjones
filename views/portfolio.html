@@ -4,15 +4,16 @@
 <div class="container">
     <h1>Portfolio</h1>
     <p>
-Lorem ipsum dolor sit amet, fabulas imperdiet nec ei. Sea alia liber graeco ea, ex mel mundi repudiare. Velit iisque ad eam, eu cum habeo eligendi. Perpetua deterruisset comprehensam vim cu.
+        Lorem ipsum dolor sit amet, fabulas imperdiet nec ei. Sea alia liber graeco ea, ex mel mundi repudiare. Velit iisque ad eam, eu cum habeo eligendi. Perpetua deterruisset comprehensam vim cu.
     </p>
 
     <p>
-Eu pri magna errem sententiae, his ne fugit legendos gloriatur. Definiebas definitionem vis ea, ut qui facer omnes aperiri, detracto consulatu contentiones ea duo. An vim antiopam constituto elaboraret. Te scripta cotidieque pro, alii sint et cum, id liber prodesset his.
+        Eu pri magna errem sententiae, his ne fugit legendos gloriatur. Definiebas definitionem vis ea, ut qui facer omnes aperiri, detracto consulatu contentiones ea duo. An vim antiopam constituto elaboraret. Te scripta cotidieque pro, alii sint et cum, id
+        liber prodesset his.
     </p>
 
     <p>
-Ad reque mundi delenit ius, putant ornatus inimicus an mel. Ea duo posse neglegentur, per malis maiestatis ex. Ipsum quando noluisse id qui. In erat rebum pro. Sed ei tota tractatos. Vel autem iusto an.        
+        Ad reque mundi delenit ius, putant ornatus inimicus an mel. Ea duo posse neglegentur, per malis maiestatis ex. Ipsum quando noluisse id qui. In erat rebum pro. Sed ei tota tractatos. Vel autem iusto an.
     </p>
 </div>
 
@@ -186,8 +187,11 @@ Ad reque mundi delenit ius, putant ornatus inimicus an mel. Ea duo posse neglege
         );
     }
     $(document).ready(function() {
-    window.scrollTo(0, 0);
-        var oriBgSrc = "/img/wedding01.jpg";//$(".fullscreen-bg__image").attr("src");
+        $.each($("input[type='hidden']"),function(){
+            preloadImage($(this).val());
+        })
+        window.scrollTo(0, 0);
+        var oriBgSrc = "/img/wedding01.jpg"; //$(".fullscreen-bg__image").attr("src");
         var cont = true;
         $(".cbp-so-section").first().addClass("cbp-so-init");
         $(".cbp-so-section").first().addClass("cbp-so-animate");
@@ -198,7 +202,7 @@ Ad reque mundi delenit ius, putant ornatus inimicus an mel. Ea duo posse neglege
                         cont = false;
                         $(".fullscreen-bg__image").fadeOut(function() {
                             $(".fullscreen-bg__image").attr("src", oriBgSrc);
-                        $(".fullscreen-bg__image").fadeIn();
+                            $(".fullscreen-bg__image").fadeIn();
                         });
                         return false;
                     }
@@ -211,7 +215,7 @@ Ad reque mundi delenit ius, putant ornatus inimicus an mel. Ea duo posse neglege
                             cont = false;
                             $(".fullscreen-bg__image").fadeOut(function() {
                                 $(".fullscreen-bg__image").attr("src", thisSrc);
-                            $(".fullscreen-bg__image").fadeIn();
+                                $(".fullscreen-bg__image").fadeIn();
                             });
                             return false;
                         }
@@ -220,6 +224,11 @@ Ad reque mundi delenit ius, putant ornatus inimicus an mel. Ea duo posse neglege
                 }
             });
             cont = true;
-        }, 300)
-    })
+        }, 100)
+    });
+
+    function preloadImage(url) {
+        var img = new Image();
+        img.src = url;
+    }
 </script>
